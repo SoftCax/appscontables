@@ -1,0 +1,8 @@
+# Los archivos del sitio se guardan con saltos de línea LF, aunque en Windows
+# el editor los muestre con CRLF. Evita diffs falsos al editar desde otro equipo.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.ico binary
+*.woff2 binary

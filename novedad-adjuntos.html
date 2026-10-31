@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dónde quedan los adjuntos y cómo respaldarlos</title>
+<meta name="description" content="Buzón SOL guarda los adjuntos de SUNAT en una carpeta local. Te explicamos la ruta, los respaldos automáticos y qué copiar si cambias de equipo." />
+<link rel="canonical" href="https://appscontables.com/novedad-adjuntos.html" />
+<meta name="theme-color" content="#1b1035" />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="es_PE" />
+<meta property="og:title" content="Dónde quedan los adjuntos y cómo respaldarlos" />
+<meta property="og:description" content="Buzón SOL guarda los adjuntos de SUNAT en una carpeta local. Te explicamos la ruta, los respaldos automáticos y qué copiar si cambias de equipo." />
+<meta property="og:url" content="https://appscontables.com/novedad-adjuntos.html" />
+
+<meta property="og:image" content="https://appscontables.com/logo-apps-contables/og-image.png" />
+
+<meta property="og:image:width" content="1200" />
+
+<meta property="og:image:height" content="630" />
+
+<meta property="og:image:alt" content="Apps Contables · Buzón SOL" />
+<link rel="icon" href="logo-apps-contables/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="logo-apps-contables/favicon-32.png" sizes="32x32" type="image/png" />
+<link rel="apple-touch-icon" href="logo-apps-contables/icono-180.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/estilos.css" />
+<script>
+  try {
+    var t = localStorage.getItem("cp_tema");
+    if (t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="topbar">
+  <div class="contenedor topbar__in">
+    <a class="logo" href="index.html">
+      <img class="logo__icono" src="logo-apps-contables/icono-marca.svg" width="30" height="30" alt="" />
+      <span>
+        <span class="logo__marca">Apps Contables</span>
+        <span class="logo__sub">Software contable</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav-principal" aria-label="Navegación principal">
+      <a href="index.html#apps">Aplicaciones</a>
+      <a href="index.html#como-empezar">Cómo empezar</a>
+      <a href="index.html#capacitaciones">Capacitaciones</a>
+      <a href="novedades.html">Novedades</a>
+      <a href="index.html#faq">Preguntas</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="topbar__acciones">
+      <button class="btn-tema" type="button" aria-label="Cambiar de tema">
+        <svg class="ico-sol" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+        </svg>
+        <svg class="ico-luna" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" />
+        </svg>
+      </button>
+      <a class="btn btn--primary btn--sm" href="buzon-sol.html">Ver Buzón SOL</a>
+      <button class="btn-menu" type="button" aria-expanded="false" aria-controls="nav-principal" aria-label="Abrir menú">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="seccion seccion--ajustada">
+    <div class="contenedor">
+      <nav class="miga" aria-label="Ruta de navegación">
+        <a href="index.html">Inicio</a>
+        <span aria-hidden="true">/</span>
+        <a href="novedades.html">Novedades</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">Adjuntos y respaldos</span>
+      </nav>
+
+      <article class="articulo" style="margin-top:26px">
+        <p class="kicker">Adjuntos</p>
+        <h1>Dónde quedan los adjuntos y cómo respaldarlos</h1>
+        <div class="articulo__meta">
+          <span><time datetime="2026-10-12">12 de octubre de 2026</time></span>
+          <span>3 min de lectura</span>
+          <span>Buzón SOL</span>
+        </div>
+
+        <p>
+          Una de las primeras preguntas al instalar Buzón SOL es dónde quedan los
+          archivos. La respuesta corta: en tu equipo, dentro de la carpeta del
+          usuario. No hay una copia en la nube ni un panel web con tus documentos.
+        </p>
+
+        <h2>La ruta exacta</h2>
+        <p>Todo vive en <code>C:\Users\&lt;usuario&gt;\AppData\Local\BuzonSunat</code>:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Carpeta o archivo</th>
+              <th>Qué contiene</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>buzon.db</code></td>
+              <td>Empresas, mensajes e historial de ejecuciones.</td>
+            </tr>
+            <tr>
+              <td><code>Adjuntos\</code></td>
+              <td>Los archivos descargados de cada mensaje.</td>
+            </tr>
+            <tr>
+              <td><code>Respaldos\</code></td>
+              <td>Copias de la base de datos.</td>
+            </tr>
+            <tr>
+              <td><code>Logs\</code></td>
+              <td>Registro de errores, útil para soporte.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          La carpeta <code>AppData</code> está oculta por defecto en el Explorador
+          de Windows. Puedes pegar la ruta directamente en la barra de direcciones.
+        </p>
+
+        <h2>Cómo se descargan</h2>
+        <p>
+          En <strong>Configuración → Detalle y programación</strong> hay una casilla
+          para descargar los adjuntos de los mensajes nuevos. Si está activa, cada
+          ciclo guarda los archivos que vienen con los mensajes recién detectados.
+        </p>
+        <p>
+          El detalle del mensaje se puede bajar bajo demanda, solo para ciertas
+          categorías o para todos, según el modo global que elijas. Esa decisión
+          afecta el tiempo que tarda cada ciclo: descargar todo en veinte empresas
+          no es lo mismo que descargar solo lo crítico.
+        </p>
+        <p>
+          Desde la grilla de Mensajes, el botón <strong>Abrir Carpeta</strong> te
+          lleva directo a la carpeta de adjuntos del mensaje seleccionado.
+        </p>
+
+        <h2>Respaldos: dos capas</h2>
+        <ul class="lista-check">
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> <strong>Automático:</strong> una copia diaria de la base de datos, sin que hagas nada.</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> <strong>Manual:</strong> el botón <em>Respaldar ahora</em>, en la sección de respaldo, cuando vas a hacer un cambio importante.</li>
+        </ul>
+        <p>
+          Los respaldos cubren la base de datos. Los archivos de <code>Adjuntos\</code>
+          no se copian automáticamente: si te importan, cópialos aparte.
+        </p>
+
+        <h2>Si cambias de equipo</h2>
+        <p>
+          Copia la carpeta completa <code>BuzonSunat</code> al equipo nuevo, en la
+          misma ruta del usuario. Luego instala el aplicativo y ábrelo. Ten en
+          cuenta dos cosas:
+        </p>
+        <ul>
+          <li>El <strong>código de PC</strong> puede cambiar, porque identifica al equipo. Si eso pasa, necesitarás una licencia nueva: escríbenos antes de formatear.</li>
+          <li>La clave SOL y la contraseña de aplicación de Gmail se guardan cifradas. Si el cifrado depende del equipo, es posible que tengas que volver a ingresarlas.</li>
+        </ul>
+
+        <blockquote>
+          <p>
+            Regla simple: si el archivo te sirve para responder una fiscalización,
+            no lo dejes solo en el disco de la oficina. Cópialo a un disco externo
+            o a tu almacenamiento habitual.
+          </p>
+        </blockquote>
+
+        <div class="aviso aviso--acento" style="margin-top:36px">
+          <p><strong>¿Todavía no lo has instalado?</strong> Buzón SOL revisa el Buzón de SUNAT de todas tus empresas en ciclos configurables y te resume lo importante por correo.</p>
+          <p style="margin-top:12px">
+            <a class="enlace-flecha" href="buzon-sol.html">Ver cómo funciona
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+          </p>
+        </div>
+
+        <p style="margin-top:30px">
+          <a class="btn btn--ghost" href="novedades.html">Volver a novedades</a>
+        </p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie__rejilla">
+      <div class="pie__marca">
+        <a class="logo" href="index.html">
+          <img class="logo__icono" src="logo-apps-contables/icono-marca.svg" width="28" height="28" alt="" />
+          <span>
+            <span class="logo__marca">Apps Contables</span>
+            <span class="logo__sub">Software contable</span>
+          </span>
+        </a>
+        <p>Aplicaciones de escritorio para contadores y estudios contables del Perú. Hechas por gente que trabaja con SUNAT todos los días.</p>
+        <div class="pie__redes">
+          <a href="#" aria-label="YouTube"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.8 2.8 0 0 0-2-2C17.9 4.8 12 4.8 12 4.8s-5.9 0-7.6.4a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2 12a29 29 0 0 0 .4 4.8 2.8 2.8 0 0 0 2 2c1.7.4 7.6.4 7.6.4s5.9 0 7.6-.4a2.8 2.8 0 0 0 2-2A29 29 0 0 0 22 12a29 29 0 0 0-.4-4.8ZM10 15.5v-7l6 3.5-6 3.5Z" /></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1Z" /></svg></a>
+          <a href="#" data-wa="Hola, vengo desde la web." aria-label="WhatsApp"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.7-.1a10 10 0 0 1-2.8-1.6 11 11 0 0 1-3.1-3.8c-.4-.8-.5-1.5-.3-2 .1-.4.5-.8.7-1 .2-.2.4-.2.6-.2h.4c.2 0 .3 0 .5.4l.7 1.7c.1.2 0 .4-.1.5l-.4.5c-.1.2-.2.3 0 .6.2.4.8 1.3 1.4 1.8.7.6 1.3.8 1.5.9.2.1.4.1.5-.1l.6-.7c.1-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.3v.5Z" /></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="pie__titulo">Aplicaciones</h2>
+        <ul>
+          <li><a href="buzon-sol.html">Buzón SOL</a></li>
+          <li><a href="sire-cpe.html">SIRE y CPE · próximamente</a></li>
+          <li><a href="facturacion-electronica.html">Facturación · próximamente</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="pie__titulo">Recursos</h2>
+        <ul>
+          <li><a href="index.html#como-empezar">Cómo empezar</a></li>
+          <li><a href="index.html#planes">Planes y precios</a></li>
+          <li><a href="index.html#capacitaciones">Capacitaciones</a></li>
+          <li><a href="novedades.html">Novedades</a></li>
+          <li><a href="index.html#faq">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="pie__titulo">Contacto</h2>
+        <ul>
+          <li><a href="#" data-wa="Hola, quiero información sobre Buzón SOL.">WhatsApp directo</a></li>
+          <li><a href="#" data-correo="Consulta desde la web">Ventas por correo</a></li>
+          <li><a href="contacto.html">Formulario de contacto</a></li>
+          <li><a href="contacto.html">Soporte</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pie__legal">
+      <span>© <span data-anio>2026</span> Apps Contables. Todos los derechos reservados.</span>
+      <span>Lima, Perú · SUNAT es una marca de sus titulares; este sitio no es un canal oficial.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/sitio.js"></script>
+</body>
+</html>

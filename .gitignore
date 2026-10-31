@@ -1,0 +1,16 @@
+# El sitio se publica tal cual: sin build, sin dependencias.
+# Este archivo solo evita subir cosas que no deben ser públicas o que son temporales.
+
+# Backend de Google Apps Script: vive en el proyecto de Apps Script de la hoja.
+# Nunca debe llegar al repositorio (el historial de git no se borra).
+apps-script/
+*.gs
+
+# Temporales de revisión (previews, QA de anchos, etc.)
+_*.html
+_*.png
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini

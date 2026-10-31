@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Buzón SOL: notificaciones de SUNAT de varias empresas</title>
+<meta name="description" content="Buzón SOL revisa el Buzón de SUNAT de tus empresas, clasifica, descarga adjuntos y resume por correo. Prueba 15 días gratis; planes desde S/ 150 al año." />
+<link rel="canonical" href="https://appscontables.com/buzon-sol.html" />
+<meta name="theme-color" content="#1b1035" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="es_PE" />
+<meta property="og:title" content="Buzón SOL · Apps Contables" />
+<meta property="og:description" content="Todas tus empresas revisadas en ciclos configurables, con clasificación, adjuntos y resumen por correo." />
+<meta property="og:url" content="https://appscontables.com/buzon-sol.html" />
+
+<meta property="og:image" content="https://appscontables.com/logo-apps-contables/og-image.png" />
+
+<meta property="og:image:width" content="1200" />
+
+<meta property="og:image:height" content="630" />
+
+<meta property="og:image:alt" content="Apps Contables · Buzón SOL" />
+<link rel="icon" href="logo-apps-contables/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="logo-apps-contables/favicon-32.png" sizes="32x32" type="image/png" />
+<link rel="apple-touch-icon" href="logo-apps-contables/icono-180.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/estilos.css" />
+<script>
+  try {
+    var t = localStorage.getItem("cp_tema");
+    if (t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  } catch (e) {}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Buzón SOL",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Windows 10, Windows 11",
+  "description": "Revisa el Buzón SOL de SUNAT de varias empresas, clasifica los mensajes, descarga los adjuntos y envía un resumen por correo.",
+  "featureList": [
+    "Multiempresa con carga desde Excel",
+    "Ciclos de revisión configurables",
+    "Reglas de clasificación por asunto",
+    "Descarga de adjuntos",
+    "Resumen por correo",
+    "Historial de ejecuciones",
+    "Respaldos automáticos"
+  ],
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Plan Básico",
+      "description": "Licencia anual por PC con hasta 20 empresas.",
+      "price": "150",
+      "priceCurrency": "PEN",
+      "availability": "https://schema.org/InStock",
+      "url": "https://appscontables.com/buzon-sol.html#planes"
+    },
+    {
+      "@type": "Offer",
+      "name": "Plan Estándar",
+      "description": "Licencia anual por PC con hasta 100 empresas.",
+      "price": "250",
+      "priceCurrency": "PEN",
+      "availability": "https://schema.org/InStock",
+      "url": "https://appscontables.com/buzon-sol.html#planes"
+    },
+    {
+      "@type": "Offer",
+      "name": "Plan Plus",
+      "description": "Licencia anual por PC con hasta 200 empresas.",
+      "price": "300",
+      "priceCurrency": "PEN",
+      "availability": "https://schema.org/InStock",
+      "url": "https://appscontables.com/buzon-sol.html#planes"
+    }
+  ],
+  "publisher": { "@type": "Organization", "name": "Apps Contables" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://appscontables.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Aplicaciones", "item": "https://appscontables.com/#apps" },
+    { "@type": "ListItem", "position": 3, "name": "Buzón SOL", "item": "https://appscontables.com/buzon-sol.html" }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="topbar">
+  <div class="contenedor topbar__in">
+    <a class="logo" href="index.html">
+      <img class="logo__icono" src="logo-apps-contables/icono-marca.svg" width="30" height="30" alt="" />
+      <span>
+        <span class="logo__marca">Apps Contables</span>
+        <span class="logo__sub">Software contable</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav-principal" aria-label="Navegación principal">
+      <a href="index.html#apps">Aplicaciones</a>
+      <a href="index.html#como-empezar">Cómo empezar</a>
+      <a href="index.html#capacitaciones">Capacitaciones</a>
+      <a href="novedades.html">Novedades</a>
+      <a href="index.html#faq">Preguntas</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="topbar__acciones">
+      <button class="btn-tema" type="button" aria-label="Cambiar de tema">
+        <svg class="ico-sol" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+        </svg>
+        <svg class="ico-luna" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" />
+        </svg>
+      </button>
+      <a class="btn btn--primary btn--sm" href="#planes">Ver planes</a>
+      <button class="btn-menu" type="button" aria-expanded="false" aria-controls="nav-principal" aria-label="Abrir menú">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="contenedor">
+    <nav class="miga" aria-label="Ruta de navegación">
+      <a href="index.html">Inicio</a>
+      <span aria-hidden="true">/</span>
+      <a href="index.html#apps">Aplicaciones</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">Buzón SOL</span>
+    </nav>
+  </div>
+
+  <section class="hero-app">
+    <div class="contenedor">
+      <div class="hero-app__in">
+        <div>
+          <p class="kicker">Notificaciones de SUNAT</p>
+          <h1>Deja de entrar empresa por empresa al Buzón SOL</h1>
+          <p class="entradilla">
+            Buzón SOL revisa todas tus empresas en ciclos configurables, clasifica lo que llega,
+            descarga los adjuntos y te manda un correo con lo importante. El aplicativo
+            trabaja en segundo plano; tú solo abres lo urgente.
+          </p>
+          <div class="hero-app__acciones">
+            <a class="btn btn--primary" href="#" data-descarga>
+              Descargar instalador
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M8 11l4 4 4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" /></svg>
+            </a>
+            <a class="btn btn--ghost" href="prueba.html">Probar 15 días gratis</a>
+          </div>
+        </div>
+
+        <aside class="caja-precio" aria-label="Licencia y condiciones">
+          <p class="caja-precio__titulo">Desde</p>
+          <p class="caja-precio__valor">S/ 150 <small>/ PC al año</small></p>
+          <p class="caja-precio__nota">Plan Básico con 20 empresas. También hay planes de 100 y 200 empresas.</p>
+          <ul>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> 15 días de prueba gratis</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> Instalador y actualizaciones incluidas</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> Empresas según tu plan</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> Soporte por WhatsApp</li>
+          </ul>
+          <a class="btn btn--primary btn--bloque" href="prueba.html">Probar 15 días gratis</a>
+          <p style="font-size:.78rem;color:var(--mut);text-align:center;margin:12px 0 0">Sin tarjeta · Plan Básico · <a href="#planes">Ver planes</a></p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor dos-columnas">
+      <div>
+        <p class="kicker">El problema</p>
+        <h2>Diez claves, diez bandejas, un plazo que no espera</h2>
+        <p class="entradilla">
+          Revisar el Buzón SOL de varias empresas significa entrar con cada usuario,
+          abrir cada mensaje y descargar cada adjunto. Cuando son veinte empresas,
+          la revisión se vuelve una tarea que se posterga… hasta que llega el
+          requerimiento que ya tenía fecha.
+        </p>
+      </div>
+      <div>
+        <p class="kicker">La solución</p>
+        <h2 style="font-size:1.35rem">Un ciclo que revisa todo por ti</h2>
+        <ul class="lista-check">
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> Recorre todas las empresas activas, una detrás de otra.</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> Clasifica por reglas propias y resalta lo crítico.</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> Guarda los adjuntos en tu equipo, no en la nube.</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> Te envía un correo al terminar, con lo nuevo y lo que falló.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion seccion--linea" id="funciones">
+    <div class="contenedor">
+      <div class="centrado">
+        <p class="kicker">Funciones</p>
+        <h2>Lo que hace mientras no lo estás mirando</h2>
+        <p class="entradilla">Todo se configura una vez. Después, el aplicativo vive en la bandeja del sistema.</p>
+      </div>
+
+      <div class="rejilla-funciones">
+        <div class="funcion">
+          <div class="funcion__icono"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V7l8-4 8 4v14M9 21v-6h6v6" /></svg></div>
+          <h3>Multiempresa</h3>
+          <p>Registra cada RUC con su usuario y clave SOL. También puedes cargar la lista desde Excel.</p>
+        </div>
+        <div class="funcion">
+          <div class="funcion__icono"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v6l4 2" /><circle cx="12" cy="12" r="9" /></svg></div>
+          <h3>Motor automático</h3>
+          <p>Revisa en ciclos configurables, 4 horas por defecto. También puedes ejecutar un ciclo cuando quieras.</p>
+        </div>
+        <div class="funcion">
+          <div class="funcion__icono"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M7 12h10M10 18h4" /></svg></div>
+          <h3>Reglas de clasificación</h3>
+          <p>Si el asunto contiene cierto texto, asigna categoría y prioridad. El orden de las reglas se ajusta a mano.</p>
+        </div>
+        <div class="funcion">
+          <div class="funcion__icono"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" /><path d="M8 9h8M8 13h8M8 17h4" /></svg></div>
+          <h3>Detalle a demanda</h3>
+          <p>Descarga el contenido de los mensajes cuando lo necesitas, por categoría o para todos.</p>
+        </div>
+        <div class="funcion">
+          <div class="funcion__icono"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M8 11l4 4 4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" /></svg></div>
+          <h3>Adjuntos descargados</h3>
+          <p>Los archivos de los mensajes nuevos se guardan en la carpeta local, listos para abrir.</p>
+        </div>
+        <div class="funcion">
+          <div class="funcion__icono"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18v12H3zM3 7l9 6 9-6" /></svg></div>
+          <h3>Resumen por correo</h3>
+          <p>Al cerrar cada ciclo llega un correo con los mensajes nuevos y las empresas que no se pudieron consultar.</p>
+        </div>
+        <div class="funcion">
+          <div class="funcion__icono"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18" /><path d="m7 14 4-4 3 3 4-6" /></svg></div>
+          <h3>Historial de ejecuciones</h3>
+          <p>Cada ciclo queda registrado: inicio, fin, empresas, resultados y errores por empresa.</p>
+        </div>
+        <div class="funcion">
+          <div class="funcion__icono"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H4zM8 20h8M12 16v4" /></svg></div>
+          <h3>Trabaja en segundo plano</h3>
+          <p>Al cerrar la ventana no se detiene: queda en la bandeja del sistema y sigue revisando.</p>
+        </div>
+        <div class="funcion">
+          <div class="funcion__icono"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.2-2.9 7.8-7 9-4.1-1.2-7-4.8-7-9V6l7-3Z" /><path d="m9 12 2 2 4-4" /></svg></div>
+          <h3>Respaldos automáticos</h3>
+          <p>Una copia diaria de la base y un botón para respaldar cuando quieras.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion seccion--linea" id="planes">
+    <div class="contenedor">
+      <div class="centrado">
+        <p class="kicker">Planes</p>
+        <h2>Un precio anual por PC, sin sorpresas</h2>
+        <p class="entradilla">
+          Elige según cuántas empresas registres. Todos los planes incluyen el
+          instalador, las actualizaciones y el soporte por WhatsApp.
+        </p>
+      </div>
+
+      <div class="rejilla-planes">
+
+        <article class="plan">
+          <h3 class="plan__nombre">Básico</h3>
+          <p class="plan__para">Para contadores independientes y estudios pequeños.</p>
+          <p class="plan__precio">S/ 150 <span>/ PC al año</span></p>
+          <p class="plan__empresas">Hasta 20 empresas</p>
+          <ul>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> 15 días de prueba gratis</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> Instalador y actualizaciones</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> Resumen por correo</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> Soporte por WhatsApp</li>
+          </ul>
+          <a class="btn btn--ghost btn--bloque" href="prueba.html">Probar gratis</a>
+        </article>
+
+        <article class="plan plan--destacado">
+          <span class="plan__cinta">Más solicitado</span>
+          <h3 class="plan__nombre">Estándar</h3>
+          <p class="plan__para">El plan que eligen la mayoría de estudios con cartera mediana.</p>
+          <p class="plan__precio">S/ 250 <span>/ PC al año</span></p>
+          <p class="plan__empresas">Hasta 100 empresas</p>
+          <ul>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> Todo lo del plan Básico</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> 100 empresas en una sola PC</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> Carga de empresas desde Excel</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> Soporte prioritario por WhatsApp</li>
+          </ul>
+          <a class="btn btn--primary btn--bloque" href="#" data-wa="Hola, quiero el plan Estándar de Buzón SOL (S/ 250, hasta 100 empresas).">Pedir el Estándar</a>
+        </article>
+
+        <article class="plan">
+          <h3 class="plan__nombre">Plus</h3>
+          <p class="plan__para">Para carteras grandes y equipos con muchos clientes.</p>
+          <p class="plan__precio">S/ 300 <span>/ PC al año</span></p>
+          <p class="plan__empresas">Hasta 200 empresas</p>
+          <ul>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> Todo lo del plan Estándar</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> 200 empresas en una sola PC</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> Respaldo diario de la base</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> Soporte prioritario por WhatsApp</li>
+          </ul>
+          <a class="btn btn--ghost btn--bloque" href="#" data-wa="Hola, quiero el plan Plus de Buzón SOL (S/ 300, hasta 200 empresas).">Pedir el Plus</a>
+        </article>
+
+      </div>
+
+      <p class="centrado" style="font-size:.82rem;color:var(--mut);margin-top:22px">
+        Precios en soles peruanos, por PC y por año. La prueba de 15 días corresponde
+        al plan Básico y se solicita con el formulario.
+      </p>
+    </div>
+  </section>
+
+  <section class="seccion seccion--linea">
+    <div class="contenedor">
+      <p class="kicker">En marcha</p>
+      <h2>Así se ve un día con Buzón SOL</h2>
+      <ol class="pasos">
+        <li class="paso">
+          <h3>Configuras una vez</h3>
+          <p>Empresas, reglas de clasificación y el correo donde quieres el resumen.</p>
+        </li>
+        <li class="paso">
+          <h3>El motor revisa</h3>
+          <p>En cada ciclo recorre todas las empresas activas y trae lo nuevo.</p>
+        </li>
+        <li class="paso">
+          <h3>Clasifica y guarda</h3>
+          <p>Aplica tus reglas, marca prioridades y descarga los adjuntos.</p>
+        </li>
+        <li class="paso">
+          <h3>Recibes el resumen</h3>
+          <p>Un correo con lo nuevo y lo que falló. Abres solo lo crítico.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="seccion seccion--linea" id="requisitos">
+    <div class="contenedor dos-columnas">
+      <div>
+        <p class="kicker">Requisitos</p>
+        <h2>Qué necesita el equipo</h2>
+        <p class="entradilla">Nada fuera de lo común para una PC de oficina.</p>
+        <table class="tabla tabla--caja">
+          <tbody>
+            <tr>
+              <th>Sistema</th>
+              <td>Windows 10 u 11</td>
+            </tr>
+            <tr>
+              <th>Componente</th>
+              <td>.NET 8 Desktop Runtime (el instalador lo descarga si falta)</td>
+            </tr>
+            <tr>
+              <th>Internet</th>
+              <td>Necesario para consultar SUNAT y enviar el correo</td>
+            </tr>
+            <tr>
+              <th>SUNAT</th>
+              <td>Usuario y clave SOL por cada empresa</td>
+            </tr>
+            <tr>
+              <th>Licencia</th>
+              <td>Se activa con el código de PC que genera el aplicativo</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="aviso aviso--acento">
+          <p>
+            <strong>Windows puede avisar que el editor es desconocido.</strong>
+            Es porque el instalador no está firmado con un certificado de entidad pública.
+            Continúa con <em>Más información → Ejecutar de todas formas</em>.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <p class="kicker">Licencia</p>
+        <h2>Activación y renovación</h2>
+        <ul class="lista-check" style="margin-top:18px">
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> La primera vez, el aplicativo queda bloqueado hasta activarlo.</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> Entras a <strong>Llave</strong>, copias el código de PC y nos lo envías.</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> Pegas la licencia, aceptas los términos y pulsas <strong>Activar</strong>.</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> En la misma página ves las <strong>empresas permitidas</strong> y la fecha de vencimiento.</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg> Cuando quedan 4 días o menos, el aplicativo te avisa una vez al día.</li>
+        </ul>
+        <div class="aviso">
+          <p>
+            Si reinstalas Windows o borras la configuración, el código de PC puede cambiar
+            y necesitarás una licencia nueva. Escríbenos antes de formatear y te ayudamos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion seccion--linea">
+    <div class="contenedor">
+      <div class="centrado">
+        <p class="kicker">Tus archivos</p>
+        <h2>Todo queda en tu equipo</h2>
+        <p class="entradilla">
+          El aplicativo guarda su información en la carpeta del usuario.
+          No hay un panel web con tus mensajes ni una copia en un servidor nuestro.
+        </p>
+      </div>
+      <table class="tabla tabla--caja" style="max-width:760px;margin-left:auto;margin-right:auto">
+        <thead>
+          <tr>
+            <th>Carpeta</th>
+            <th>Qué contiene</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>buzon.db</code></td>
+            <td>Base de datos con empresas, mensajes e historial</td>
+          </tr>
+          <tr>
+            <td><code>Adjuntos\</code></td>
+            <td>Archivos descargados del Buzón SOL</td>
+          </tr>
+          <tr>
+            <td><code>Respaldos\</code></td>
+            <td>Copias de la base de datos</td>
+          </tr>
+          <tr>
+            <td><code>Logs\</code></td>
+            <td>Registro de errores para soporte</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="centrado" style="font-size:.85rem;color:var(--mut);margin-top:14px">
+        Ruta: <code>C:\Users\&lt;usuario&gt;\AppData\Local\BuzonSunat</code>
+      </p>
+    </div>
+  </section>
+
+  <section class="seccion seccion--linea">
+    <div class="contenedor">
+      <div class="centrado">
+        <p class="kicker">Antes de instalar</p>
+        <h2>Preguntas sobre Buzón SOL</h2>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>¿Necesito instalar .NET 8 aparte?</summary>
+          <p>No. Si el equipo no tiene el .NET 8 Desktop Runtime, el instalador lo descarga e instala. Puede pedir permisos de administrador.</p>
+        </details>
+        <details>
+          <summary>¿Cuántas empresas puedo registrar?</summary>
+          <p>Depende de tu plan: <strong>Básico 20</strong>, <strong>Estándar 100</strong> y <strong>Plus 200</strong> empresas. La página Llave muestra las empresas permitidas de tu licencia; si llegaste al máximo, puedes eliminar una o solicitar el cambio de plan.</p>
+        </details>
+        <details>
+          <summary>¿Puedo probarlo antes de pagar?</summary>
+          <p>Sí. La licencia de prueba dura <strong>15 días</strong> y corresponde al plan Básico (20 empresas). Se solicita con el <a href="prueba.html">formulario de prueba</a> y se envía al correo que indiques.</p>
+        </details>
+        <details>
+          <summary>¿El precio es por empresa o por PC?</summary>
+          <p>Es un precio <strong>anual por PC</strong>. Cada plan incluye una cantidad máxima de empresas: 20, 100 o 200. Si necesitas más de una PC, se paga una licencia por equipo.</p>
+        </details>
+        <details>
+          <summary>¿Puedo revisar sin esperar el próximo ciclo?</summary>
+          <p>Sí. <em>Ejecutar ahora</em> fuerza un ciclo completo en ese momento; <em>Revisar seleccionadas</em> lo hace solo con las empresas que marques.</p>
+        </details>
+        <details>
+          <summary>¿Con qué correo se envía el resumen?</summary>
+          <p>Con una cuenta de Gmail configurada como remitente. Necesitas una contraseña de aplicación, que requiere verificación en dos pasos. La clave se guarda cifrada y no se vuelve a mostrar.</p>
+        </details>
+        <details>
+          <summary>¿Qué pasa si SUNAT no responde?</summary>
+          <p>La empresa queda como <em>requiere atención</em>, el detalle aparece en Historial y el correo incluye las empresas que no se pudieron consultar con su causa.</p>
+        </details>
+        <details>
+          <summary>Si cierro la ventana, ¿deja de revisar?</summary>
+          <p>No. El aplicativo se queda en la bandeja del sistema y sigue trabajando. Solo se detiene con <em>Salir</em> o con <em>Detener motor</em>.</p>
+        </details>
+        <details>
+          <summary>¿Qué pasa cuando vence la licencia?</summary>
+          <p>Cuando quedan 4 días o menos, el aplicativo abre en Llave una vez al día con el aviso. Al llegar a 0 se bloquea, detiene el motor y solo deja la página Llave para renovar.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion seccion--ajustada">
+    <div class="contenedor">
+      <div class="bloque-oscuro">
+        <div>
+          <h2>Pruébalo 15 días, sin costo</h2>
+          <p>Descarga el instalador y pide tu licencia de prueba del plan Básico. Si te sirve, activas el plan anual que elijas: 20, 100 o 200 empresas.</p>
+        </div>
+        <div class="bloque-oscuro__acciones">
+          <a class="btn btn--primary" href="prueba.html">Solicitar prueba gratis</a>
+          <a class="btn btn--light" href="#" data-descarga>Descargar instalador</a>
+          <p class="bloque-oscuro__nota">Windows 10 u 11 · 15 días · Plan Básico</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie__rejilla">
+      <div class="pie__marca">
+        <a class="logo" href="index.html">
+          <img class="logo__icono" src="logo-apps-contables/icono-marca.svg" width="28" height="28" alt="" />
+          <span>
+            <span class="logo__marca">Apps Contables</span>
+            <span class="logo__sub">Software contable</span>
+          </span>
+        </a>
+        <p>Aplicaciones de escritorio para contadores y estudios contables del Perú. Hechas por gente que trabaja con SUNAT todos los días.</p>
+        <div class="pie__redes">
+          <a href="#" aria-label="YouTube"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.8 2.8 0 0 0-2-2C17.9 4.8 12 4.8 12 4.8s-5.9 0-7.6.4a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2 12a29 29 0 0 0 .4 4.8 2.8 2.8 0 0 0 2 2c1.7.4 7.6.4 7.6.4s5.9 0 7.6-.4a2.8 2.8 0 0 0 2-2A29 29 0 0 0 22 12a29 29 0 0 0-.4-4.8ZM10 15.5v-7l6 3.5-6 3.5Z" /></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1Z" /></svg></a>
+          <a href="#" data-wa="Hola, vengo desde la web." aria-label="WhatsApp"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.7-.1a10 10 0 0 1-2.8-1.6 11 11 0 0 1-3.1-3.8c-.4-.8-.5-1.5-.3-2 .1-.4.5-.8.7-1 .2-.2.4-.2.6-.2h.4c.2 0 .3 0 .5.4l.7 1.7c.1.2 0 .4-.1.5l-.4.5c-.1.2-.2.3 0 .6.2.4.8 1.3 1.4 1.8.7.6 1.3.8 1.5.9.2.1.4.1.5-.1l.6-.7c.1-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.3v.5Z" /></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="pie__titulo">Aplicaciones</h2>
+        <ul>
+          <li><a href="buzon-sol.html">Buzón SOL</a></li>
+          <li><a href="sire-cpe.html">SIRE y CPE · próximamente</a></li>
+          <li><a href="facturacion-electronica.html">Facturación · próximamente</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="pie__titulo">Recursos</h2>
+        <ul>
+          <li><a href="index.html#como-empezar">Cómo empezar</a></li>
+          <li><a href="index.html#planes">Planes y precios</a></li>
+          <li><a href="index.html#capacitaciones">Capacitaciones</a></li>
+          <li><a href="novedades.html">Novedades</a></li>
+          <li><a href="index.html#faq">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="pie__titulo">Contacto</h2>
+        <ul>
+          <li><a href="#" data-wa="Hola, quiero información sobre Buzón SOL.">WhatsApp directo</a></li>
+          <li><a href="#" data-correo="Consulta desde la web">Ventas por correo</a></li>
+          <li><a href="contacto.html">Formulario de contacto</a></li>
+          <li><a href="contacto.html">Soporte</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pie__legal">
+      <span>© <span data-anio>2026</span> Apps Contables. Todos los derechos reservados.</span>
+      <span>Lima, Perú · SUNAT es una marca de sus titulares; este sitio no es un canal oficial.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/sitio.js"></script>
+</body>
+</html>
