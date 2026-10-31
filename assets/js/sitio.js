@@ -14,7 +14,7 @@ const CONFIG = {
   descarga: "https://raw.githubusercontent.com/SoftCax/PublishApps/main/BuzonSOL/BuzonSOL.exe",
   // URL del Web App de Google Apps Script que guarda las solicitudes en tu hoja.
   // Mientras esté vacía, el formulario abre el Google Form con los datos ya cargados.
-  formulario: "https://script.google.com/macros/s/AKfycbwhYFc6VKRWaRLj7_fRv0-_l8oZRUCoaHjVQKWMMDf7qns6vAIn4evWkUd2BQ7hob39CQ/exec",
+  formulario: "https://script.google.com/macros/s/AKfycbwA1D67CouEq3VnISJy4Upx6o3C_6JFA4AEcjlxzEcSWm2EsjNSPrfXj_FKcljNj52hAg/exec",
   // Campos del Google Form, para abrirlo rellenado si no hay Apps Script.
   formGoogle: "https://docs.google.com/forms/d/e/1FAIpQLSe6lrPUCJOmq6paTJl__E_Mx05GDbWR8gKUkkGlb06F-YiaTA/viewform",
   formCampos: {
