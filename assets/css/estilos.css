@@ -1383,6 +1383,92 @@ html[data-theme="dark"] .aviso-form--error {
   .pie { margin-top: 44px; }
 }
 
+/* ------------------------------------------------------------- Video del tutorial */
+
+.video-marco {
+  max-width: 940px;
+  margin: clamp(26px, 4vw, 44px) auto 0;
+}
+
+.video {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #0b0718;
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+}
+
+.video img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video__velo {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(11, 7, 24, 0) 45%, rgba(11, 7, 24, 0.55) 100%);
+}
+
+.video__play {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #05261b;
+  background: var(--accent);
+  box-shadow: 0 14px 38px rgba(16, 181, 131, 0.45);
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+
+.video:hover .video__play { transform: scale(1.06); background: var(--accent-dark); }
+.video:focus-visible { outline: 3px solid var(--brand); outline-offset: 4px; }
+
+.video__tiempo {
+  position: absolute;
+  right: 14px;
+  bottom: 12px;
+  padding: 4px 10px;
+  border-radius: 7px;
+  background: rgba(11, 7, 24, 0.8);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video__pie {
+  margin: 12px 0 0;
+  font-size: 0.86rem;
+  color: var(--mut);
+  text-align: center;
+}
+
+@media (max-width: 620px) {
+  .video__play { width: 62px; height: 62px; }
+  .video__tiempo { font-size: 0.74rem; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .btn:hover, .tarjeta-app:hover, .nota:hover { transform: none; }

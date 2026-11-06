@@ -249,6 +249,30 @@ function iniciarFormulario() {
   });
 }
 
+/* ------------------------------------------------------------- Video del tutorial */
+
+function iniciarVideo() {
+  const boton = $("[data-video]");
+  if (!boton) return;
+
+  boton.addEventListener("click", () => {
+    const id = boton.getAttribute("data-video");
+    if (!id) return;
+
+    const marco = document.createElement("iframe");
+    marco.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+    marco.title = "Tutorial de Buzón SOL";
+    marco.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    marco.allowFullscreen = true;
+    marco.loading = "eager";
+
+    const caja = document.createElement("div");
+    caja.className = "video video--cargado";
+    caja.appendChild(marco);
+    boton.replaceWith(caja);
+  });
+}
+
 /* ------------------------------------------------------------- Varios */
 
 function iniciarVarios() {
@@ -265,5 +289,6 @@ document.addEventListener("DOMContentLoaded", () => {
   iniciarWhatsApp();
   iniciarFormulario();
   iniciarLicencia();
+  iniciarVideo();
   iniciarVarios();
 });
